@@ -4,8 +4,8 @@ React-disposable-modal is a reactive API for building modal components in React.
 [![npm version](https://img.shields.io/npm/v/react-disposable-modal.svg?style=flat-square)](https://www.npmjs.org/package/react-disposable-modal)
 
 ## Motivation
-We want to build a modal in React, but we don't want that modal to be
-inserted in the DOM immediately where the Modal is rendered, instead we
+You want to build a modal in React, but don't want that modal to be
+inserted in the DOM immediately where the Modal is rendered, instead you
 want it to be appended to `document.body`.
 
 Modals have are inherently an asyncronous ui component. A modal is
