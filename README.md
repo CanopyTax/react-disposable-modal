@@ -93,7 +93,9 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <button onClick={this.showModal}>Show Modal</button>
+        <button onClick={() => this.setState({ showModal: true })}>
+          Show Modal
+        </button>
         {this.showModal && (
           <Modal>
             <div>
@@ -103,7 +105,7 @@ class App extends React.Component {
                 <button onClick={() => this.setState({ showModal: false })}>
                   Cancel
                 </button>
-                <button onClick={() => this.setState({ showModal: true })}>
+                <button onClick={() => this.setState({ showModal: false })}>
                   Save
                 </button>
               </div>
