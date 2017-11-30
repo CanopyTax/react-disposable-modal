@@ -117,3 +117,7 @@ class App extends React.Component {
   }
 }
 ```
+
+## Note
+
+React-disposable-modal uses underneath the hood both [react-disposable-decorator](https://github.com/CanopyTax/react-disposable-decorator) and [disposable-component](https://github.com/CanopyTax/disposable-component);
