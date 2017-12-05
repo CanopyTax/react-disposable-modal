@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 import Cancelable from "react-disposable-decorator";
 import mountComponent from "disposable-component";
 
-@Cancelable
 class _Modal extends React.Component {
   componentDidMount() {
     if(!ReactDOM.createPortal) {
@@ -36,8 +35,7 @@ export function createCancelableModal(El, props = {}) {
       el = document.createElement("div");
       document.body.appendChild(el);
 
-      const renderer = ReactDOM.createPortal || ReactDOM.render
-      renderer(
+      ReactDOM.render(
         <El
           {...props}
           onCompleted={onCompleted}
