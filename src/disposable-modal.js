@@ -3,19 +3,26 @@ import ReactDOM from "react-dom";
 import Cancelable from "react-disposable-decorator";
 import mountComponent from "disposable-component";
 
+@Cancelable
 class _Modal extends React.Component {
   componentDidMount() {
-    const children = this.props.children;
-
-    this.props.cancelWhenUnmounted(
-      createCancelableModal(function Portal() {
-        return children;
-      }, this.props).subscribe(() => {})
-    );
+    if(!ReactDOM.createPortal) {
+      //only <React16 needs to do this
+      const children = this.props.children;
+  
+      this.props.cancelWhenUnmounted(
+        createCancelableModal(function Portal() {
+          return children;
+        }, this.props).subscribe(() => {})
+      );
+    }
   }
 
   render() {
-    return null;
+    if(!ReactDOM.createPortal) return null; // for <React16
+    const el = document.createElement('div')
+    document.body.appendChild(el)
+    return ReactDOM.createPortal(this.props.children, el)
   }
 }
 
@@ -29,7 +36,8 @@ export function createCancelableModal(El, props = {}) {
       el = document.createElement("div");
       document.body.appendChild(el);
 
-      ReactDOM.render(
+      const renderer = ReactDOM.createPortal || ReactDOM.render
+      renderer(
         <El
           {...props}
           onCompleted={onCompleted}
