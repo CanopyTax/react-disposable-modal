@@ -5,17 +5,23 @@ import mountComponent from "disposable-component";
 
 class _Modal extends React.Component {
   componentDidMount() {
-    const children = this.props.children;
-
-    this.props.cancelWhenUnmounted(
-      createCancelableModal(function Portal() {
-        return children;
-      }, this.props).subscribe(() => {})
-    );
+    if(!ReactDOM.createPortal) {
+      //only <React16 needs to do this
+      const children = this.props.children;
+  
+      this.props.cancelWhenUnmounted(
+        createCancelableModal(function Portal() {
+          return children;
+        }, this.props).subscribe(() => {})
+      );
+    }
   }
 
   render() {
-    return null;
+    if(!ReactDOM.createPortal) return null; // for <React16
+    const el = document.createElement('div')
+    document.body.appendChild(el)
+    return ReactDOM.createPortal(this.props.children, el)
   }
 }
 
