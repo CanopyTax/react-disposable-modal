@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import Cancelable from "react-disposable-decorator";
 import mountComponent from "disposable-component";
 
+// stateless functional components were not working correctly, so I had to make a very thin component to get state/prop changes to propagate correctly to children components 
 class _Portal extends React.Component {
   render() {
     return (
