@@ -1,6 +1,6 @@
 {
   "name": "react-disposable-modal",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "React-disposable-modal is a reactive API for building modal components in React.",
   "main": "lib/disposable-modal.js",
   "repository": "https://github.com/CanopyTax/react-disposable-modal",
