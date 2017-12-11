@@ -47,6 +47,13 @@ class _Modal extends React.Component {
     }
     return ReactDOM.createPortal(this.props.children, this.parentContainer)
   }
+
+  componentWillUnmount() {
+    if(this.parentContainer) {
+      document.body.removeChild(this.parentContainer)
+      this.parentContainer = null
+    }
+  }
 }
 
 export const Modal = Cancelable(_Modal);
