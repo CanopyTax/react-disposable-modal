@@ -49,7 +49,7 @@ class _Modal extends React.Component {
   }
 
   componentWillUnmount() {
-    if(this.parentContainer) {
+    if(this.parentContainer && document.body.contains(this.parentContainer)) {
       document.body.removeChild(this.parentContainer)
       this.parentContainer = null
     }
