@@ -1418,10 +1418,10 @@ diffie-hellman@^5.0.0:
     miller-rabin "^4.0.0"
     randombytes "^2.0.0"
 
-disposable-component@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/disposable-component/-/disposable-component-0.3.0.tgz#1e72e56acfc246e61015d013686530478cc55e18"
-  integrity sha512-sxhZAtBjXki+Y1XmCk9CvwZXOy+H+2krkhkwFDhvC2+NknAXTXFGwm3ZqZMcB41QBnFRUJvYQjvt3zCFVzAWEQ==
+disposable-component@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/disposable-component/-/disposable-component-0.3.1.tgz#287aa316392e7059a45998a9568316db923d4b91"
+  integrity sha512-qQdjQmX4FQNzFZ2okUGZ75jeL1oHOcOQd/0Bofhbmj+m6HT0zJsRzNFwhJ6nJFw1W8snV0Wui/g4YAwo7xk7XQ==
   dependencies:
     webpack "^4.20.2"
     webpack-cli "^3.1.2"
