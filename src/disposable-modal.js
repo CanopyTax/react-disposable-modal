@@ -2,9 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 import Cancelable from "react-disposable-decorator";
 import mountComponent from "disposable-component";
-import mountDisposableComponent from "disposable-component/rx6"
+import mountDisposableComponent from "disposable-component/lib/rx6"
 
-// stateless functional components were not working correctly, so I had to make a very thin component to get state/prop changes to propagate correctly to children components 
+// stateless functional components were not working correctly, so I had to make a very thin component to get state/prop changes to propagate correctly to children components
 class _Portal extends React.Component {
   render() {
     return (
@@ -22,7 +22,7 @@ class _Modal extends React.Component {
   }
 
   componentDidUpdate() {
-    // renderPortal() if < React16 so that state/prop changes are reflected in the DOM    
+    // renderPortal() if < React16 so that state/prop changes are reflected in the DOM
     if(!ReactDOM.createPortal) this.renderPortal()
   }
 
@@ -40,9 +40,9 @@ class _Modal extends React.Component {
 
   render() {
     if(!ReactDOM.createPortal) return null;
-    
+
     if(!this.parentContainer) {
-      // we need to keep a reference to the parent DOM node for future times when this function is called      
+      // we need to keep a reference to the parent DOM node for future times when this function is called
       this.parentContainer = document.createElement("div")
       document.body.appendChild(this.parentContainer)
     }
