@@ -7,7 +7,7 @@
   "author": "Bret Little <bret.little@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "prepublish": "npm run build",
+    "prepublish": "yarn build",
     "build": "babel src --out-dir lib --source-maps"
   },
   "devDependencies": {
@@ -16,12 +16,13 @@
     "@babel/preset-env": "^7.1.5",
     "@babel/preset-react": "^7.0.0"
   },
+  "peerDependencies": {
+    "react": ">=15",
+    "react-dom": ">=15"
+  },
   "dependencies": {
-    "disposable-component": "^0.3.1",
-    "react": "^16.6.3",
-    "react-disposable-decorator": "^4.0.0",
-    "react-dom": "^16.6.3",
-    "rx": "^4.1.0"
+    "disposable-component": "^0.3.2",
+    "react-disposable-decorator": "^4.0.0"
   },
   "files": [
     "lib",
