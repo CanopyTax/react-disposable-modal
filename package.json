@@ -14,9 +14,11 @@
     "@babel/cli": "^7.1.5",
     "@babel/core": "^7.1.5",
     "@babel/preset-env": "^7.1.5",
-    "@babel/preset-react": "^7.0.0",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0"
+    "@babel/preset-react": "^7.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=15",
+    "react-dom": ">=15"
   },
   "dependencies": {
     "disposable-component": "^0.3.2",
