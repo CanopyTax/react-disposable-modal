@@ -1028,12 +1028,11 @@ detect-libc@^1.0.2:
   resolved "https://registry.yarnpkg.com/detect-libc/-/detect-libc-1.0.3.tgz#fa137c4bd698edf55cd5cd02ac559f91a4c4ba9b"
   integrity sha1-+hN8S9aY7fVc1c0CrFWfkaTEups=
 
-disposable-component@^0.4.2:
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/disposable-component/-/disposable-component-0.4.2.tgz#407c607886a9118ac1ba3a03207986bf7542aaf6"
-  integrity sha512-6/mT8KadlnYaQeYNm5sSLTEnzgo5JnxOYBQkAL7lYxo3JuJGXYiuJbz4kzrTKNjqlTvgLwHCjhjDLpPZcWr0Tw==
+disposable-component@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/disposable-component/-/disposable-component-1.0.0.tgz#a45520040ab46ef0b4de127fe5a52ac1ec92aed6"
+  integrity sha512-bwxavnYOASONHbr5b1Uh4DesBcH22YFPP8kSEWbbiIHyWzs4APiFr/q7er5mBueYvLWHD9JCBsRs5U/4MOK1Mg==
   dependencies:
-    rx "^4.1.0"
     rxjs "^6.4.0"
 
 electron-to-chromium@^1.3.124:
@@ -1892,11 +1891,6 @@ rimraf@^2.6.1:
   integrity sha512-mwqeW5XsA2qAejG46gYdENaxXjx9onRNCfn7L0duuP4hCuTIi/QO7PDK07KJfp1d+izWPrzEJDcSqBa0OZQriA==
   dependencies:
     glob "^7.1.3"
-
-rx@^4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/rx/-/rx-4.1.0.tgz#a5f13ff79ef3b740fe30aa803fb09f98805d4782"
-  integrity sha1-pfE/957zt0D+MKqAP7CfmIBdR4I=
 
 rxjs@^6.4.0:
   version "6.4.0"

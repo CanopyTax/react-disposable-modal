@@ -21,7 +21,7 @@
     "react-dom": ">=15"
   },
   "dependencies": {
-    "disposable-component": "^0.4.2",
+    "disposable-component": "^1.0.0",
     "react-disposable-decorator": "^4.0.0"
   },
   "files": [
