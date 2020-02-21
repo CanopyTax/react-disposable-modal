@@ -1035,11 +1035,6 @@ disposable-component@^1.0.0:
   dependencies:
     rxjs "^6.4.0"
 
-disposable-decorator@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/disposable-decorator/-/disposable-decorator-1.0.1.tgz#4dd343a30ee851e1a6f575ad0afb78f33bf0f332"
-  integrity sha1-TdNDow7oUeGm9XWtCvt48zvw8zI=
-
 electron-to-chromium@^1.3.124:
   version "1.3.125"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.125.tgz#dbde0e95e64ebe322db0eca764d951f885a5aff2"

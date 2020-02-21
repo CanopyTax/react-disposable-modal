@@ -22,7 +22,6 @@
   },
   "dependencies": {
     "disposable-component": "^1.0.0",
-    "disposable-decorator": "^1.0.1",
     "react-disposable-decorator": "^4.0.0"
   },
   "files": [
