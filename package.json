@@ -27,5 +27,6 @@
   "files": [
     "lib",
     "src"
-  ]
+  ],
+  "packageManager": "yarn@4.14.1"
 }
