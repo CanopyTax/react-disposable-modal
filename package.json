@@ -11,10 +11,10 @@
     "build": "babel src --out-dir lib --source-maps"
   },
   "devDependencies": {
-    "@babel/cli": "^7.4.3",
-    "@babel/core": "^7.4.3",
-    "@babel/preset-env": "^7.4.3",
-    "@babel/preset-react": "^7.0.0"
+    "@babel/cli": "^7.29.7",
+    "@babel/core": "^7.29.7",
+    "@babel/preset-env": "^7.29.7",
+    "@babel/preset-react": "^7.29.7"
   },
   "peerDependencies": {
     "react": ">=15",
@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "disposable-component": "^1.0.0",
-    "react-disposable-decorator": "^4.0.0"
+    "react-disposable-decorator": "^4"
   },
   "files": [
     "lib",
